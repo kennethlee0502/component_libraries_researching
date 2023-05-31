@@ -1,42 +1,28 @@
 import React from "react";
-import * as RadioGroup from "@radix-ui/react-radio-group";
+import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 
-const RadioGroupDemo = () => (
-  <form>
-    <br />
-    <p>This is Standrad Radix UI, not sure why it cant render Tailwin CSS</p>
-    <br />
-    <RadioGroup.Root
-      defaultValue="default"
-      aria-label="View density"
-      className="flex flex-col space-y-2"
-    >
-      <div className="flex items-center space-x-2">
-        <RadioGroup.Item value="default" id="r1" className="radio-item">
-          <RadioGroup.Indicator className="radio-indicator" />
-        </RadioGroup.Item>
-        <label className="text-gray-700" htmlFor="r1">
-          Default
-        </label>
-      </div>
-      <div className="flex items-center space-x-2">
-        <RadioGroup.Item value="comfortable" id="r2" className="radio-item">
-          <RadioGroup.Indicator className="radio-indicator" />
-        </RadioGroup.Item>
-        <label className="text-gray-700" htmlFor="r2">
-          Comfortable
-        </label>
-      </div>
-      <div className="flex items-center space-x-2">
-        <RadioGroup.Item value="compact" id="r3" className="radio-item">
-          <RadioGroup.Indicator className="radio-indicator" />
-        </RadioGroup.Item>
-        <label className="text-gray-700" htmlFor="r3">
-          Compact
-        </label>
-      </div>
-    </RadioGroup.Root>
-  </form>
-);
+const RadixUi = () => {
+  return (
+    <div className="relative custom-dropdown-root">
+      <br />
+      <p>
+        This is a Tailwind CSS Radix UI example. I have made attempts to style
+        it with Tailwind CSS, but unfortunately, I couldn't achieve the desired
+        results.
+      </p>
+      <br />
+      <DropdownMenuPrimitive.Root>
+        <DropdownMenuPrimitive.Trigger className="border border-black px-4 py-2 cursor-pointer custom-dropdown-trigger">
+          Trigger
+        </DropdownMenuPrimitive.Trigger>
+        <DropdownMenuPrimitive.Content className="absolute bg-black shadow-md">
+          <DropdownMenuPrimitive.Item className="px-4 py-2 cursor-pointer">
+            Item
+          </DropdownMenuPrimitive.Item>
+        </DropdownMenuPrimitive.Content>
+      </DropdownMenuPrimitive.Root>
+    </div>
+  );
+};
 
-export default RadioGroupDemo;
+export default RadixUi;

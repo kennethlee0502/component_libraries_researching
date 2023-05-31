@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import ChakraUI from "./ChakraUI";
 import RadixUi from "./RadixUI";
+import MyTabs from "./Headless";
+
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -14,6 +16,7 @@ root.render(
     <ChakraProvider>
       <ChakraUI />
       <RadixUi />
+      <MyTabs />
     </ChakraProvider>
   </React.StrictMode>
 );

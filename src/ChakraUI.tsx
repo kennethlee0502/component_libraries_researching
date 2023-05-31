@@ -27,7 +27,11 @@ function ChakraUI() {
         </TabPanels>
       </Tabs>
       <br />
-      <p>This is Tailwind CSS Chakra-UI, it needs a tool called twin.macro</p>
+      <p>
+        This is a Chakra UI setup with Tailwind CSS. It requires a tool called
+        twin.macro, which is the easiest to install without the need for
+        modifying tailwind.config.js.
+      </p>
       <br />
       <Tabs sx={tw`bg-gray-800`}>
         <TabList>

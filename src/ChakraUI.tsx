@@ -5,7 +5,8 @@ import tw from "twin.macro";
 function ChakraUI() {
   return (
     <div>
-      <p>This is Standrad Chakra-UI</p>
+      <br />
+      <p className="text-blue-700">This is Standrad Chakra-UI👇</p>
       <br />
       <Tabs>
         <TabList>
@@ -27,10 +28,10 @@ function ChakraUI() {
         </TabPanels>
       </Tabs>
       <br />
-      <p>
+      <p className="text-blue-700">
         This is a Chakra UI setup with Tailwind CSS. It requires a tool called
         twin.macro, which is the easiest to install without the need for
-        modifying tailwind.config.js.
+        modifying tailwind.config.js.👇
       </p>
       <br />
       <Tabs sx={tw`bg-gray-800`}>
@@ -70,6 +71,21 @@ function ChakraUI() {
           </TabPanel>
         </TabPanels>
       </Tabs>
+      <br />
+      <p className="text-blue-700">
+        ⭐ Opinion⭐ : I appreciate Chakra UI for its modularity and
+        accessibility. It presents me with a suite of components straight out of
+        the box, all carrying their unique styles. I find Chakra UI's strong
+        emphasis on accessibility and customizability particularly noteworthy.
+        Moreover, it grants me the liberty to use style props to style
+        components, which gel quite well with Tailwind's utility classes.
+        However, when I combine Tailwind with Chakra UI, I often find myself
+        having to override some of Chakra's styles to bring them in line with
+        Tailwind's design system. I really like the broad array of common UI
+        elements, such as buttons, forms, modals, and popovers, Chakra UI
+        offers.
+      </p>
+      <hr />
     </div>
   );
 }
